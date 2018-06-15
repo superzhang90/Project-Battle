@@ -1,4 +1,3 @@
-
 ## 利用pyspark-sumbit进行提交代码，分布式计算
 #/spark/spark-2.1.0-bin-hadoop2.7/bin/spark-submit --master spark://192.168.10.4:7077 --num-executors 2 --driver-memory 1g --executor-memory 2g --executor-cores 2 /spark/daima/xsaj.py 100
 
