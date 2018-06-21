@@ -3,6 +3,7 @@
 
 ## pyspark 进行相似度计算，可分为数据部分和文字部分
 ##设置环境变量
+##设置环境变量  
 
 #encoding:utf-8
 from pyspark import SparkConf,SparkContext
@@ -232,5 +233,3 @@ cosine.cache()
 #保存成json
 cosine.write.format('json').save("/spark/bigdata/out_all_5000")    ## 分多个文件存储，不合并
 ## cosine.coalesce(1).write.format('json').save("hdfs:///usr/isw_6/ml/out/jyaq_300w")   ##将文件合并成一个再输出
-
-
